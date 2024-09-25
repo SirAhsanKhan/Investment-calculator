@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Investment Calculator</title>
+        <link rel="stylesheet" href="invest.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Investment Calculator</h1>
+            <div class="form-group">
+                <label for="initialInvestment">Initial Monthly Investment (₹):</label>
+                <input type="number" id="initialInvestment" placeholder="5000">
+            </div>
+            <div class="form-group">
+                <label for="increaseRate">Annual Increase Rate (%):</label>
+                <input type="number" id="increaseRate" placeholder="10">
+            </div>
+            <div class="form-group">
+                <label for="years">Number of Years:</label>
+                <input type="number" id="years" placeholder="20">
+            </div>
+            <div class="form-group">
+                <label for="interestRate">Annual Interest Rate (%):</label>
+                <input type="number" id="interestRate" placeholder="20">
+            </div>
+            <button onclick="calculateInvestment()">Calculate</button>
+            <div class="investment-details">
+                <p id="result">Your investment by the end of 20 years: ₹0.00</p>
+            </div>
+        </div>
+        <script src="invest.js"></script>
+    </body>
+
+</html>
