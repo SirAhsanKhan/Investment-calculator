@@ -31,5 +31,5 @@ function calculateInvestment() {
     const sipFutureValue = calculateSIPWithIncrease(initialInvestment, increaseRate, monthlyInterestRate, years);
 
     // Display the result in the HTML
-    document.getElementById("result").textContent = `Your investment by the end of ${years} years: ₹${sipFutureValue.toFixed(2)}`;
-}
+    document.getElementById("result").textContent = `Your investment by the end of ${years} years: ₹${sipFutureValue.toFixed(2)}`
+};
